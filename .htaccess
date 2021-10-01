@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^downloads$ /downloads.php
+RewriteRule ^latest$ /latest.php
+RewriteRule ^latest/([^/]*)$ /latest.php?what=$1
+</IfModule>
