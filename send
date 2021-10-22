@@ -1,0 +1,23 @@
+#!/bin/bash
+
+cd /Users/gareth/Ziniki/website
+rm -rf IMAGE
+mkdir IMAGE
+cp .htaccess IMAGE
+# cp favicon.* IMAGE
+# cp gmmapowell/gmmapowell.html IMAGE/index.html
+
+cp -r css IMAGE
+cp -r images IMAGE
+cp *.html IMAGE
+cp *.php IMAGE
+# cp -r gmmapowell/flascklib IMAGE
+# cp -r gmmapowell/includes IMAGE
+# cp -r gmmapowell/modules IMAGE
+# cp -r gmmapowell/js IMAGE
+# cp -r ui/images IMAGE
+# cp -r ajax IMAGE
+# cp -r articles IMAGE
+
+uploadSome
+refreshChrome

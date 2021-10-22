@@ -1,5 +1,7 @@
 .well-known/
 _downloads/
+IMAGE/
+hashes
 favicon.gif
 favicon.ico
 favicon.png

@@ -1,0 +1,4 @@
+dir=IMAGE
+hashes=hashes
+removepatt=^IMAGE/
+scploc=gmmapowell@ziniki.org:www.ziniki.org
