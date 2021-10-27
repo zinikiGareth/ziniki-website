@@ -83,7 +83,7 @@ body {
 	background-color: antiquewhite;
 }
 
-.downloads {
+div.downloads {
 	display: inline-block;
 	width: 375px;
 	height: 200px;
