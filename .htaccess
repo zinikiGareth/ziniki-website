@@ -4,3 +4,12 @@ RewriteRule ^downloads$ /downloads.php
 RewriteRule ^latest$ /latest.php
 RewriteRule ^latest/([^/]*)$ /latest.php?what=$1
 </IfModule>
+<Files "index.html">
+Header set Cache-Control "max-age=1, public"
+</Files>
+<FilesMatch ".php$">
+Header set Cache-Control "no-store"
+</FilesMatch>
+<FilesMatch ".(css|js)$">
+Header set Cache-Control "max-age=1, public"
+</FilesMatch>

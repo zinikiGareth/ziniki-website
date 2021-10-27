@@ -9,6 +9,7 @@ cp .htaccess IMAGE
 
 cp -r css IMAGE
 cp -r images IMAGE
+cp -r js IMAGE
 cp *.html IMAGE
 cp *.php IMAGE
 # cp -r gmmapowell/flascklib IMAGE
