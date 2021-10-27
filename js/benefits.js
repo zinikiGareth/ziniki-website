@@ -6,6 +6,7 @@ for (var bi=0;bi<bs.length;bi++) {
 		console.log(bs[bi].id);
 	}
 }
+addPopup(document.querySelector(".blurb"));
 
 function addPopup(elt) {
 	elt.addEventListener("click", function() {

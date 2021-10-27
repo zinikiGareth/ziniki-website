@@ -11,12 +11,15 @@ function check($curr, $g, $m) {
   } else
     return null;
 }
-function cell($g, $l) {
+function cell($g, $l, $m) {
   $h = "_downloads/" . $g . '/' . $l;
   if (file_exists($h)) {
-    print "<td class='download link'><a href='$h'>$g</a></td>";
-  } else {
-    print "<td class='download nolink'></td>";
+    print "<a href='$h'>";
+    print "<div class='download-for'>";
+    print "<div class='download-label'>$m: </div>";
+    print "<div class='download-version'>$g</div>";
+    print "</div>";
+    print "</a>";
   }
 }
 $fm = null;
@@ -53,29 +56,56 @@ foreach ($dates as $i => $f) {
 <head>
 <title>Latest Downloads</title>
 <link rel='stylesheet' type='text/css' href='/css/ziniki.css'>
+<link rel='stylesheet' type='text/css' href='/css/downloads.css'>
+<link rel='stylesheet' type='text/css' href='/css/latest.css'>
 </head>
 <body>
-<h1>Latest Downloads</h1>
-<table class='downloads'>
-<tr><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th><th></th><th colspan='4'>Developer Guides</th><th colspan='4'>Reference Manuals</th></tr>
-<tr><th>MacOS</th><th>Linux</th><th>Developer Kit</th><th>AWS Deployment</th><th>VSCode Extension</th><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th></tr>
-<tr>
+<div class='titlebar'>
+			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
+			<div class='title'>Latest Downloads</div>
+			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
+		</div>
+<div class='download-all-groups'>
+<div class='download-block'>
+<div class='download-group'>
+<div class='download-title'>FLAS Binaries</div>
 <?php
-cell($fm, "flas-mac.zip");
-cell($fl, "flas-linux.zip");
-cell($zd, "ziniki.zip");
-cell($za, "aws-lambda.zip");
-cell($vs, "flas-0.0.1.vsix");
-cell($guide, "flas-guide.pdf");
-cell($guide, "flas-guide.epub");
-cell($ref, "flas-reference.pdf");
-cell($ref, "flas-reference.epub");
-cell($zguide, "ziniki-guide.pdf");
-cell($zguide, "ziniki-guide.epub");
-cell($zref, "ziniki-reference.pdf");
-cell($zref, "ziniki-reference.epub");
+cell($fm, "flas-mac.zip", "Mac");
+cell($fl, "flas-linux.zip", "Linux");
 ?>
-</tr>
-</table>
+</div>
+<div class='download-group'>
+<div class='download-title'>Ziniki Binaries</div>
+<?php
+cell($zd, "ziniki.zip", "Developer Kit");
+cell($za, "aws-lambda.zip", "AWS Deployable");
+?>
+</div>
+<div class='download-group'>
+<div class='download-title'>IDE Plugins</div>
+<?php
+cell($vs, "flas-0.0.1.vsix", "VS Code");
+?>
+</div>
+<div class='download-group'>
+<div class='download-title'>FLAS Documentation</div>
+<?php
+cell($guide, "flas-guide.pdf", "Guide PDF");
+cell($guide, "flas-guide.epub", "Guide EPUB");
+cell($ref, "flas-reference.pdf", "Reference PDF");
+cell($ref, "flas-reference.epub", "Reference EPUB");
+?>
+</div>
+<div class='download-group'>
+<div class='download-title'>Ziniki Documentation</div>
+<?php
+cell($zguide, "ziniki-guide.pdf", "Guide PDF");
+cell($zguide, "ziniki-guide.epub", "Guide EPUB");
+cell($zref, "ziniki-reference.pdf", "Reference PDF");
+cell($zref, "ziniki-reference.epub", "Reference EPUB");
+?>
+</div>
+</div>
+</div>
 </body>
 </html>

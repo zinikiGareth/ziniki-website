@@ -1,10 +1,15 @@
 <html lang='en'>
 <head>
 <title>Downloads</title>
+<link rel='stylesheet' type='text/css' href='css/ziniki.css'>
 <link rel='stylesheet' type='text/css' href='css/downloads.css'>
 </head>
 <body>
-<h1 class='downloads-title'>Download Archive</h1>
+<div class='titlebar'>
+			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
+			<div class='title'>Download Archive</div>
+			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
+		</div>
 <table class='downloads'>
 <tr><th></th><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th><th></th><th colspan='4'>Developer Guides</th><th colspan='4'>Reference Manuals</th></tr>
 <tr><th>Version</th><th>MacOS</th><th>Linux</th><th>Developer Kit</th><th>AWS Deployment</th><th>VSCode Extension</th><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th><th colspan='2'>FLAS</th><th colspan='2'>Ziniki</th></tr>

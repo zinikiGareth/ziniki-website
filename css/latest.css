@@ -1,0 +1,48 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1.downloads-title {
+	text-align: center;
+}
+
+.download-all-groups {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.downloads-block {
+	display: inline-block;
+	width: 900px;
+	background-color: antiquewhite;
+}
+
+.download-group {
+	display: inline-block;
+	width: 375px;
+	height: 200px;
+	background-color: lightseagreen;
+	margin: 20px;
+	border-radius: 30px;
+	vertical-align: top;
+}
+
+.download-for {
+	display: block;
+	text-align: left;
+	margin: 10px 20px 0 20px;
+	font-size: 18px;
+}
+
+.download-label {
+	display: inline-block;
+	width: 240px;
+}
+
+.download-for:hover {
+	background-color: yellow;
+}
+.download-version {
+	display: inline-block;
+}
