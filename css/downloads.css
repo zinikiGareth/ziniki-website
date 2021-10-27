@@ -6,11 +6,13 @@ h1.downloads-title {
 	text-align: center;
 }
 
-/*
-table.downloads {
-//	color: red;
+.downloads-container {
+	overflow-x: auto;
 }
-*/
+
+table.downloads {
+	min-width: 1000px;
+}
 
 tr:nth-child(odd) {
 	background-color: #f2f2f2;

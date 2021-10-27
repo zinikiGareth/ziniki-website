@@ -119,6 +119,11 @@ div.downloads {
 	font-weight: bold;
 }
 
+.benefits {
+	width: 100%;
+	text-align: center;
+}
+
 .benefit {
 	display: inline-block;
 	position: relative;

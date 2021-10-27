@@ -54,15 +54,17 @@ foreach ($dates as $i => $f) {
 ?>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Latest Downloads</title>
 <link rel='stylesheet' type='text/css' href='/css/ziniki.css'>
+<link rel="stylesheet" type='text/css' href="css/ziniki-mobile.css">
 <link rel='stylesheet' type='text/css' href='/css/downloads.css'>
 <link rel='stylesheet' type='text/css' href='/css/latest.css'>
 </head>
 <body>
 <div class='titlebar'>
 			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
-			<div class='title'>Latest Downloads</div>
+			<div class='title long'>Latest Downloads</div>
 			<img src='images/ZinikiLogo.png' alt='Ziniki Logo'>
 		</div>
 <div class='download-all-groups'>

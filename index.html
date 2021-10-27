@@ -1,7 +1,9 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ziniki</title>
 		<link rel="stylesheet" href="css/ziniki.css">
+		<link rel="stylesheet" href="css/ziniki-mobile.css">
 	</head>
 	<body>
 		<div class='titlebar'>
@@ -45,213 +47,215 @@
 			</div>
 		</div>
 
-		<div class='benefit' id='benefit-actors'>
-			<div class='benefit-title'>
-				Actors
+		<div class='benefits'>
+			<div class='benefit' id='benefit-actors'>
+				<div class='benefit-title'>
+					Actors
+				</div>
+				<div class='benefit-body'>
+					<p>FLAS is based on the <i>actor</i> abstraction: cards, services and agents.</p>
+					<p>Cards encapsulate data, message handling, event handling and UI.</p>
+					<p>Services allow new, rich microservices to be defined on the server side.</p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>FLAS is based on the <i>actor</i> abstraction: cards, services and agents.</p>
-				<p>Cards encapsulate data, message handling, event handling and UI.</p>
-				<p>Services allow new, rich microservices to be defined on the server side.</p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-boyd'>
-			<div class='benefit-title'>
-				Bring Your Own Design
+			<div class='benefit' id='benefit-boyd'>
+				<div class='benefit-title'>
+					Bring Your Own Design
+				</div>
+				<div class='benefit-body'>
+					<p>Design and Code are built separately using the most appropriate tools.</p>
+					<p>Compiler brings the two together, statically checking for consistency.</p>
+					<p>HTML <tt>id</tt>s are used to connect code to elements.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>In common programming languages, designers and engineers work together through communication rather than collaboration.</p>
+					<p>A design must be completed and then handed off to engineers for conversion to a special markup format before it can be included in the product.</p>
+					<p>Alternatively, designers must deal directly with complex and awkward tools and languages.</p>
+					<p>FLAS solves this by automating this conversion process, only putting the burden of including FLAS-specific <code>id</code>s on individual elements that are referenced from the code.</p>
+					<p>The compiler statically checks that all the <code>id</code>s referenced in the code are actually present - and have the correct role - in the design.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Design and Code are built separately using the most appropriate tools.</p>
-				<p>Compiler brings the two together, statically checking for consistency.</p>
-				<p>HTML <tt>id</tt>s are used to connect code to elements.</p>
-			</div>
-			<div class='benefit-detail'>
-				<p>In common programming languages, designers and engineers work together through communication rather than collaboration.</p>
-				<p>A design must be completed and then handed off to engineers for conversion to a special markup format before it can be included in the product.</p>
-				<p>Alternatively, designers must deal directly with complex and awkward tools and languages.</p>
-				<p>FLAS solves this by automating this conversion process, only putting the burden of including FLAS-specific <code>id</code>s on individual elements that are referenced from the code.</p>
-				<p>The compiler statically checks that all the <code>id</code>s referenced in the code are actually present - and have the correct role - in the design.</p>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-cloud-ready'>
-			<div class='benefit-title'>
-				Cloud Ready
+			<div class='benefit' id='benefit-cloud-ready'>
+				<div class='benefit-title'>
+					Cloud Ready
+				</div>
+				<div class='benefit-body'>
+					<p>Ziniki Server can easily be deployed to the cloud.</p>
+					<p>Server automatically serves provisioned applications.</p>
+					<p></p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Ziniki Server can easily be deployed to the cloud.</p>
-				<p>Server automatically serves provisioned applications.</p>
-				<p></p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-testing'>
-			<div class='benefit-title'>
-				Easy to Test
+			<div class='benefit' id='benefit-testing'>
+				<div class='benefit-title'>
+					Easy to Test
+				</div>
+				<div class='benefit-body'>
+					<p>FLAS has direct, language-level support for unit and system tests.</p>
+					<p>Units are defined as <i>actors</i>: cards, services or agents.</p>
+					<p>System tests model interactions between actors without infrastructure.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>Existing programming languages do not have native support for testing.  They depend on writing tests in the same language, with the same set of facilities as production code.</p>
+					<p>FLAS directly supports <i>unit</i> testing. Most importantly, it defines what constitutes a "unit": the <i>actor</i>, a card, service or agent.</p>
+					<p>Tests are written in their own sub-language, similar to the main language but with specific constructs to enable both arrange-assert and mock testing.</p>
+					<p>The functional nature of FLAS itself supports testing through clarity, controlled state and message passing.</p>
+					<p>The self-contained nature of actors means that <i>all</i> side-effects can be explicitly declared and captured in any given test.</p>
+					<p>FLAS supports <i>system</i> level testing by permitting the definition of tests which involve multi-step interactions between actors <i>without</i> having to configure or provision any infrastructure.</p>
+					<p>The system tests enable developers to confirm that their individual components work in the way they intended.</p>
+					<p>Simple test double support for system infrastructure enables tests to be easily configured and analyzed.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>FLAS has direct, language-level support for unit and system tests.</p>
-				<p>Units are defined as <i>actors</i>: cards, services or agents.</p>
-				<p>System tests model interactions between actors without infrastructure.</p>
-			</div>
-			<div class='benefit-detail'>
-				<p>Existing programming languages do not have native support for testing.  They depend on writing tests in the same language, with the same set of facilities as production code.</p>
-				<p>FLAS directly supports <i>unit</i> testing. Most importantly, it defines what constitutes a "unit": the <i>actor</i>, a card, service or agent.</p>
-				<p>Tests are written in their own sub-language, similar to the main language but with specific constructs to enable both arrange-assert and mock testing.</p>
-				<p>The functional nature of FLAS itself supports testing through clarity, controlled state and message passing.</p>
-				<p>The self-contained nature of actors means that <i>all</i> side-effects can be explicitly declared and captured in any given test.</p>
-				<p>FLAS supports <i>system</i> level testing by permitting the definition of tests which involve multi-step interactions between actors <i>without</i> having to configure or provision any infrastructure.</p>
-				<p>The system tests enable developers to confirm that their individual components work in the way they intended.</p>
-				<p>Simple test double support for system infrastructure enables tests to be easily configured and analyzed.</p>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-security-model'>
-			<div class='benefit-title'>
-				Sharing Security Model
+			<div class='benefit' id='benefit-security-model'>
+				<div class='benefit-title'>
+					Sharing Security Model
+				</div>
+				<div class='benefit-body'>
+					<p>Ziniki has security built in.</p>
+					<p>Secure access is at the lowest levels.</p>
+					<p>Basic security handled automatically.</p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Ziniki has security built in.</p>
-				<p>Secure access is at the lowest levels.</p>
-				<p>Basic security handled automatically.</p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-reactive'>
-			<div class='benefit-title'>
-				Reactive
+			<div class='benefit' id='benefit-reactive'>
+				<div class='benefit-title'>
+					Reactive
+				</div>
+				<div class='benefit-body'>
+					<p>All FLAS actors are reactive by default.</p>
+					<p>The infrastructure directly handles display updating.</p>
+					<p>Code and display are decoupled through the current state.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>Reactive, event-driven, push programming has been part of everyday programming for decades now.  But languages are still stuck with an "imperative by default" model with the consequent assumption of a "pull" model.</p>
+					<p>FLAS alters this by putting message passing front and center - it is the only way for actors to communicate and state can <i>only</i> be updated at the end of processing a single message.</p>
+					<p>The current state of an actor - only visible within methods on that actor - can only be updated from within methods on the card.</p>
+					<p>The display is generated by combining the current state with a provided set of HTML and CSS files.</p>
+					<p>Cards have explicit syntax to handle UI events.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>All FLAS actors are reactive by default.</p>
-				<p>The infrastructure directly handles display updating.</p>
-				<p>Code and display are decoupled through the current state.</p>
-			</div>
-			<div class='benefit-detail'>
-				<p>Reactive, event-driven, push programming has been part of everyday programming for decades now.  But languages are still stuck with an "imperative by default" model with the consequent assumption of a "pull" model.</p>
-				<p>FLAS alters this by putting message passing front and center - it is the only way for actors to communicate and state can <i>only</i> be updated at the end of processing a single message.</p>
-				<p>The current state of an actor - only visible within methods on that actor - can only be updated from within methods on the card.</p>
-				<p>The display is generated by combining the current state with a provided set of HTML and CSS files.</p>
-				<p>Cards have explicit syntax to handle UI events.</p>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-federated'>
-			<div class='benefit-title'>
-				Federated Servers
+			<div class='benefit' id='benefit-federated'>
+				<div class='benefit-title'>
+					Federated Servers
+				</div>
+				<div class='benefit-body'>
+					<p>Ziniki Servers can be deployed independently.</p>
+					<p>But can communicate and reference remote data.</p>
+					<p>Security is handled seamlessly.</p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Ziniki Servers can be deployed independently.</p>
-				<p>But can communicate and reference remote data.</p>
-				<p>Security is handled seamlessly.</p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
 
-		<div class='benefit' id='benefit-no-boilerplate'>
-			<div class='benefit-title'>
-				No Need for Boilerplate
+			<div class='benefit' id='benefit-no-boilerplate'>
+				<div class='benefit-title'>
+					No Need for Boilerplate
+				</div>
+				<div class='benefit-body'>
+					<p>Common interaction patterns are part of the language.</p>
+					<p>Syntax is lean and based on white space.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>Programmers spend a lot of time writing boilerplate of one kind or another.</p>
+					<p>The most common kind revolves around telling the compiler what you want to do.  As much as possible, that is eliminated in FLAS by using lean syntax and using white space to define the relationships between items.</p>
+					<p>But a lot of effort also goes into developing, and interacting with, containers, libraries and frameworks.  FLAS automatically includes messaging passing and UI frameworks with direct, implicit framework support, obviating the need to even think about that boilerplate.</p>
+					<p>Similarly, the common language and data structures, together with native support for data storage, mean that transformation layers such as ORMs are irrelevant.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Common interaction patterns are part of the language.</p>
-				<p>Syntax is lean and based on white space.</p>
+			
+			<div class='benefit' id='benefit-rich-services'>
+				<div class='benefit-title'>
+					Rich Service Environment
+				</div>
+				<div class='benefit-body'>
+					<p>Multiple Services offered in base Ziniki.</p>
+					<p>Data and Content storage.</p>
+					<p>Integration with other services such as Twitter.</p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-detail'>
-				<p>Programmers spend a lot of time writing boilerplate of one kind or another.</p>
-				<p>The most common kind revolves around telling the compiler what you want to do.  As much as possible, that is eliminated in FLAS by using lean syntax and using white space to define the relationships between items.</p>
-				<p>But a lot of effort also goes into developing, and interacting with, containers, libraries and frameworks.  FLAS automatically includes messaging passing and UI frameworks with direct, implicit framework support, obviating the need to even think about that boilerplate.</p>
-				<p>Similarly, the common language and data structures, together with native support for data storage, mean that transformation layers such as ORMs are irrelevant.</p>
-			</div>
-		</div>
-		
-		<div class='benefit' id='benefit-rich-services'>
-			<div class='benefit-title'>
-				Rich Service Environment
-			</div>
-			<div class='benefit-body'>
-				<p>Multiple Services offered in base Ziniki.</p>
-				<p>Data and Content storage.</p>
-				<p>Integration with other services such as Twitter.</p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-platform-choice'>
-			<div class='benefit-title'>
-				Choice of Platform
+			<div class='benefit' id='benefit-platform-choice'>
+				<div class='benefit-title'>
+					Choice of Platform
+				</div>
+				<div class='benefit-body'>
+					<p>Developers can run one or more Ziniki servers locally.</p>
+					<p>Deployment possible to Ziniki Network using IAAS.</p>
+					<p>Or you can deploy your own instance with a supported cloud.</p>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Developers can run one or more Ziniki servers locally.</p>
-				<p>Deployment possible to Ziniki Network using IAAS.</p>
-				<p>Or you can deploy your own instance with a supported cloud.</p>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-common-language'>
-			<div class='benefit-title'>
-				Common Language
+			<div class='benefit' id='benefit-common-language'>
+				<div class='benefit-title'>
+					Common Language
+				</div>
+				<div class='benefit-body'>
+					<p>One Language for Server, Browser and Apps.</p>
+					<p>Single Data Definition from data storage to UI.</p>
+					<p>Code can be shared anywhere.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>It is possible to consider that JavaScript can be used on both client and server side, but in reality the differences between the runtime environments mean that almost no code can be shared.</p>
+					<p>With FLAS, all elements other than the actual cards and services themselves can be used seamlessly wherever needed.</p>
+					<p>Likewise, data may be stored or transmitted with the same data definitions being shared at every level of the system from data store to card.</p>
+					<p>Because of the message passing model, the same environment exists everywhere - the only difference is the (very real) performance charactertistic of location.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>One Language for Server, Browser and Apps.</p>
-				<p>Single Data Definition from data storage to UI.</p>
-				<p>Code can be shared anywhere.</p>
+			
+			<div class='benefit' id='benefit-type-inference'>
+				<div class='benefit-title'>
+					Static Type Inference
+				</div>
+				<div class='benefit-body'>
+					<p>Static Types allow compile-time errors.</p>
+					<p>Type inference reduces boilerplate.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>Many languages have static type checking, but it often comes with significant overheads in terms of defining types.</p>
+					<p>FLAS requires type clarity, but can generally infer types.  A type needs to be declared in one place (for example, a contract definition) but then it can be copied to other locations.</p>
+					<p>For those occasions when you really don't know, FLAS offers "top" types such as <code>Any</code> and a <code>cast</code> operator.</p>
+				</div>
 			</div>
-			<div class='benefit-detail'>
-				<p>It is possible to consider that JavaScript can be used on both client and server side, but in reality the differences between the runtime environments mean that almost no code can be shared.</p>
-				<p>With FLAS, all elements other than the actual cards and services themselves can be used seamlessly wherever needed.</p>
-				<p>Likewise, data may be stored or transmitted with the same data definitions being shared at every level of the system from data store to card.</p>
-				<p>Because of the message passing model, the same environment exists everywhere - the only difference is the (very real) performance charactertistic of location.</p>
-			</div>
-		</div>
-		
-		<div class='benefit' id='benefit-type-inference'>
-			<div class='benefit-title'>
-				Static Type Inference
-			</div>
-			<div class='benefit-body'>
-				<p>Static Types allow compile-time errors.</p>
-				<p>Type inference reduces boilerplate.</p>
-			</div>
-			<div class='benefit-detail'>
-				<p>Many languages have static type checking, but it often comes with significant overheads in terms of defining types.</p>
-				<p>FLAS requires type clarity, but can generally infer types.  A type needs to be declared in one place (for example, a contract definition) but then it can be copied to other locations.</p>
-				<p>For those occasions when you really don't know, FLAS offers "top" types such as <code>Any</code> and a <code>cast</code> operator.</p>
-			</div>
-		</div>
 
-		<div class='benefit' id='benefit-ready-deploy'>
-			<div class='benefit-title'>
-				Ready to Deploy
+			<div class='benefit' id='benefit-ready-deploy'>
+				<div class='benefit-title'>
+					Ready to Deploy
+				</div>
+				<div class='benefit-body'>
+					<p>Can target multiple back ends.</p>
+					<p>In particular can generate web site and mobile apps.</p>
+				</div>
+				<div class='benefit-detail'>
+					<p>Because FLAS is a higher-order language, it is not natively ready for deployment to any platform.</p>
+					<p>But for the same reason, the compiler is capable of converting the code to any suitable back end framework, such as HTML/JavaScript, Android, iOS/Swift or WASM.</p>
+				</div>
 			</div>
-			<div class='benefit-body'>
-				<p>Can target multiple back ends.</p>
-				<p>In particular can generate web site and mobile apps.</p>
+			<!--
+			<div class='benefit'>
+				<div class='benefit-title'>
+				</div>
+				<div class='benefit-body'>
+				</div>
+				<div class='benefit-detail'>
+				</div>
 			</div>
-			<div class='benefit-detail'>
-				<p>Because FLAS is a higher-order language, it is not natively ready for deployment to any platform.</p>
-				<p>But for the same reason, the compiler is capable of converting the code to any suitable back end framework, such as HTML/JavaScript, Android, iOS/Swift or WASM.</p>
-			</div>
+			-->
 		</div>
-		<!--
-		<div class='benefit'>
-			<div class='benefit-title'>
-			</div>
-			<div class='benefit-body'>
-			</div>
-			<div class='benefit-detail'>
-			</div>
-		</div>
-		-->
 		<script language='JavaScript' src="js/benefits.js"></script>
 	</body>
 </html>

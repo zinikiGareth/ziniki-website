@@ -1,0 +1,43 @@
+@media screen and (max-width: 900px) {
+	.blurb-text, .downloads-block {
+		width: 100%;
+	}
+	.benefit.popup .benefit-detail, .blurb.popup .blurb-popup {
+		width: calc(100% - 90px);
+		left: 30px;
+		right: 30px;
+		padding: 10px;
+		border-radius: 12px;
+		border-width: 3px;
+	}
+	.benefit-body {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.titlebar {
+		height: 64px;
+	}
+	.titlebar .title {
+		font-size: 56px;
+		width: calc(100% - 136px);
+	}
+	.titlebar .title.long {
+		font-size: 36px;
+		width: calc(100% - 136px);
+	}
+	.titlebar img {
+		width: 64px;
+	}
+	.benefit {
+		width: 400px;
+		margin: 20px auto 20px auto;
+	}
+	.benefit-title {
+		font-size: 24px;
+	}
+	.benefit-body {
+		font-size: 18px;
+	}
+}
